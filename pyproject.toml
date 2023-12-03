@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-project"
+version = "0.1.0"
+description = ""
+authors = ["Mohamed Tarek <mohamed96tarek@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+colorama = "^0.4.6"
+types-flask = "^1.1.6"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

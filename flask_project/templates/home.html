@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>welcome to the home page</h1>
+    <h3>Posts:</h3>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{{ url_for('get_posts', post_id=post['post_id']) }}">{{ post['title'] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <button type="button"> <a href="{{url_for('create')}}">Add New Post</a></button>
+{% endblock content %}
